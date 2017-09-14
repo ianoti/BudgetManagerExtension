@@ -1,7 +1,8 @@
 $(function(){
   // Ensure the current value in chrome storage is always displayed
-  chrome.storage.sync.get('total', function(budget){
+  chrome.storage.sync.get(['total', 'limit'], function(budget){
     $('#total').text(budget.total);
+    $('#limit').text(budget.limit);
   });
 
   $('#spendAmount').click(function(){
@@ -29,5 +30,4 @@ $(function(){
     chrome.storage.sync.set({ 'total': 0});
     $('#total').text(0);
   });
-
 });
