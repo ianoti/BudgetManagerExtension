@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Budget Manager",
+    "version": "1.0",
+    "description": "This extension tracks your overall spending",
+    "icons": {
+        "16": "16icon.png",
+        "48": "48icon.png",
+        "128": "128icon.png"
+    },
+    "browser_action": {
+        "default_icon": "16icon.png",
+        "default_popup": "popup.html"
+    }
+}
